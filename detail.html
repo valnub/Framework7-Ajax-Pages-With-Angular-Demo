@@ -1,0 +1,20 @@
+﻿<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left sliding"><a href="index.html" class="back link"><i class="icon icon-back"></i><span>Back</span></a></div>
+        <div class="center sliding">Details</div>
+        <div class="right"></div>
+    </div>
+</div>
+<div class="pages navbar-through">
+    <div id="detail" data-page="detail" class="page cached" ng-controller="DetailPageController">
+        <div class="page-content abc">
+            <div class="content-block-title">Movie details</div>
+            <div class="card">
+                <div class="card-header">{{movie.title}}</div>
+                <div class="card-content">
+                    <div class="card-content-inner">{{movie.synopsis}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
