@@ -3,13 +3,12 @@ Movies.angular.controller('MainController', ['$scope', '$compile', '$rootScope',
     // Never recompile index page
     if (e.detail.page.name != 'index') {
       // Ajax pages must be compiled first
-      $compile(e.srcElement)($scope);
+      $compile(e.target)($scope);
       $scope.$apply();
     }
 
     // Send broadcast event when switching to new page
     $rootScope.$broadcast(e.detail.page.name + 'PageEnter', e);
-
   });
   
   $$(document).on('pageAfterAnimation', function(e) {
