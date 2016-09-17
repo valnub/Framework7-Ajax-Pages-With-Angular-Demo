@@ -45,8 +45,8 @@
 
                     <!-- Page content-->
                     <div class="page-content list-block media-list">
-                        <ul ng-repeat="movie in movies">
-                            <li>
+                        <ul>
+                            <li ng-repeat="movie in movies">
                                 <a ng-href="detail.html" ng-click="onItemClicked(movie)" class="item-link item-content">
                                     <div class="item-media">
                                         <img ng-src="{{movie.posters.thumbnail}}" width="80">
